@@ -72,8 +72,9 @@ form {
 
   input {
     &[type='email'] {
-      appearance: none;
+      -webkit-appearance: none;
       border: 1px solid #568f7d;
+      border-radius: none;
       flex: 1;
       font: 18px 'Muli';
       padding: 10px;
@@ -81,9 +82,10 @@ form {
     }
 
     &[type='submit'] {
-      appearance: none;
+      -webkit-appearance: none;
       background-color: #568f7d;
       border: none;
+      border-radius: none;
       color: #fff;
       font: 18px 'Muli';
       margin-top: 1em;

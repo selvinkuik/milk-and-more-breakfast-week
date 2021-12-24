@@ -5,8 +5,7 @@
   "private": true,
   "engines": {
     "node": ">=16.5.0",
-    "npm": ">=7.19.1",
-    "npx": ">=7.19.1"
+    "npm": ">=7.19.1"
   },
   "scripts": {
     "dev": "npx webpack --mode development --config webpack.config.js",
