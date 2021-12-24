@@ -1,0 +1,105 @@
+@import 'breakpoints';
+@import 'fonts';
+@import 'minireset';
+@import 'common';
+
+.breakfast-week-logo {
+  grid-column: 1/13;
+  padding: 0 calc(100% / 12) 0 calc(100% / 12 * 3);
+
+  @include medium-up {
+    grid-column: 1/6;
+    padding: 0 calc(100% / 5);
+  }
+}
+
+.content {
+  grid-column: 1/13;
+  text-align: center;
+
+  @include medium-up {
+    grid-column: 6/12;
+    text-align: left;
+  }
+
+  &__inside {
+    @include medium-up {
+      padding-right: calc(100% / 6 * 2);
+    }
+  }
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 1em;
+
+  @include medium-up {
+    font-size: 48px;
+    margin-top: 0;
+  }
+
+  &__coming-soon {
+    font: normal 42px 'Ernest and Emily';
+
+    @include medium-up {
+      font-size: 60px;
+    }
+  }
+}
+
+.social {
+  &__link {
+    margin: 0 5px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__logo {
+    width: 36px;
+  }
+}
+
+form {
+  margin-bottom: 3em;
+  width: 100%;
+
+  @include medium-up {
+    display: flex;
+  }
+
+  input {
+    &[type='email'] {
+      appearance: none;
+      border: 1px solid #568f7d;
+      flex: 1;
+      font: 18px 'Muli';
+      padding: 10px;
+      width: 100%;
+    }
+
+    &[type='submit'] {
+      appearance: none;
+      background-color: #568f7d;
+      border: none;
+      color: #fff;
+      font: 18px 'Muli';
+      margin-top: 1em;
+      padding: 10px;
+
+      @include medium-up {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.email {
+  white-space: nowrap;
+}
+
+.milk-and-more-logo {
+  width: 150px;
+}

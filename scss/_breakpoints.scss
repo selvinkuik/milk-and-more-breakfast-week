@@ -1,0 +1,87 @@
+$breakpoints: (
+  small: 375px,
+  medium: 650px,
+  large: 890px,
+  xlarge: 1440px,
+  xxlarge: 1920px,
+);
+
+$media: (
+  small-up: '(min-width: #{map-get($breakpoints, small) + 1})',
+  small-only: '(max-width: #{map-get($breakpoints, medium)})',
+  medium-up: '(min-width: #{map-get($breakpoints, medium) + 1})',
+  medium-down: '(max-width: #{map-get($breakpoints, large)})',
+  medium-only: '(min-width: #{map-get($breakpoints, medium)}) and (max-width: #{map-get($breakpoints, large)})',
+  large-up: '(min-width: #{map-get($breakpoints, large) + 1})',
+  large-down: '(max-width: #{map-get($breakpoints, xlarge)})',
+  large-only: '(min-width: #{map-get($breakpoints, large)}) and (max-width: #{map-get($breakpoints, xlarge)})',
+  xlarge-up: '(min-width: #{map-get($breakpoints, xlarge) + 1})',
+  xlarge-down: '(max-width: #{map-get($breakpoints, xxlarge)})',
+  xlarge-only: '(min-width: #{map-get($breakpoints, xlarge)}) and (max-width: #{map-get($breakpoints, xxlarge)})',
+);
+
+@mixin small-up {
+  @media #{map-get($media, small-up)} {
+    @content;
+  }
+}
+
+@mixin small-only {
+  @media #{map-get($media, small-only)} {
+    @content;
+  }
+}
+
+@mixin medium-up {
+  @media #{map-get($media, medium-up)} {
+    @content;
+  }
+}
+
+@mixin medium-down {
+  @media #{map-get($media, medium-down)} {
+    @content;
+  }
+}
+
+@mixin medium-only {
+  @media #{map-get($media, medium-only)} {
+    @content;
+  }
+}
+
+@mixin large-up {
+  @media #{map-get($media, large-up)} {
+    @content;
+  }
+}
+
+@mixin large-down {
+  @media #{map-get($media, large-down)} {
+    @content;
+  }
+}
+
+@mixin large-only {
+  @media #{map-get($media, large-only)} {
+    @content;
+  }
+}
+
+@mixin xlarge-up {
+  @media #{map-get($media, xlarge-up)} {
+    @content;
+  }
+}
+
+@mixin xlarge-down {
+  @media #{map-get($media, xlarge-down)} {
+    @content;
+  }
+}
+
+@mixin xlarge-only {
+  @media #{map-get($media, xlarge-only)} {
+    @content;
+  }
+}
