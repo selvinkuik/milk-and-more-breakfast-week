@@ -3,6 +3,10 @@
 @import 'minireset';
 @import 'common';
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .breakfast-week-logo {
   grid-column: 1/13;
   padding: 0 calc(100% / 12) 0 calc(100% / 12 * 3);
