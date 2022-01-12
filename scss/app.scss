@@ -28,7 +28,7 @@
 
   &__inside {
     @include medium-up {
-      padding-right: calc(100% / 6 * 2);
+      padding-right: calc(100% / 6);
     }
   }
 }
